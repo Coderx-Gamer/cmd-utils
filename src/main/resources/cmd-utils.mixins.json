@@ -1,0 +1,13 @@
+{
+     "required": true,
+     "package": "org.cmdutils.mixin",
+     "compatibilityLevel": "JAVA_17",
+     "client": [
+          "ClientConnectionMixin",
+          "ScreenMixin",
+          "accessor.SessionAccessor"
+     ],
+     "injectors": {
+          "defaultRequire": 1
+     }
+}

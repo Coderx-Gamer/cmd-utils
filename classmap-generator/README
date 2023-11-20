@@ -1,0 +1,28 @@
+Class Map Generator
+===================
+
+Class Map Generator is a basic tool for generating Java maps from compiled class names to
+short packet names, this is used in CMD-Utils for the packet filter (mcfw.)
+
+
+Building
+========
+
+To build Class Map Generator, run 'make' in this directory and it will build a binary at
+'./bin/cmgen'. To get rid of it, run 'make clean'.
+
+You need to have libcurl and libcurlpp installed to build this.
+
+
+Usage
+=====
+
+I would not recommend using this tool as the code is a bit messy and may break if the
+Javadoc website (https://maven.fabricmc.net/) updates.
+
+But if you still want to use it, first, build it, then, run
+'./bin/cmgen <yarn version>', you can find the latest yarn version on this site:
+https://fabricmc.net/develop/ if you scroll down a bit. Running this program may take
+up to a few minutes depending on your network speed. The program will generate Java
+code for a 'ClassMap' class which can be pasted into 'org.cmdutils.util.ClassMap'
+in CMD-Utils.
