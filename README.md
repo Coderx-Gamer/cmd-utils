@@ -87,7 +87,7 @@ added in the future.
 [trade](./docs/trade.md) - Select a villager trade by ID.\
 [button](./docs/button.md) - Send a ButtonClick packet.\
 [click](./docs/click.md) - Send a ClickSlot packet.\
-[mcfw](./docs/mcfw.md) - Minecraft Firewall packet filter.
+[mcfw](./docs/mcfw.md) - Minecraft Firewall packet filter.\
 [session](./docs/session.md) - Session ID getter/setter.
 
 ---
