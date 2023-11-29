@@ -5,6 +5,7 @@ import org.cmdutils.command.CommandEnvironment;
 import org.cmdutils.command.Commands;
 import org.cmdutils.command.RunnableCommand;
 import org.cmdutils.terminal.logger.Logger;
+import org.cmdutils.terminal.logger.NullLogger;
 import org.cmdutils.util.Utils;
 
 import java.util.Arrays;
@@ -28,8 +29,9 @@ public class LoopCommand extends Command {
             return Commands.COMMAND_FAILURE;
         }
 
+        NullLogger nullLogger = new NullLogger();
         for (int i = 0; i < times; i++) {
-            new RunnableCommand(Commands.find(args[1]), args.length == 2 ? new String[0] : Arrays.copyOfRange(args, 2, args.length), logger, env).execute();
+            new RunnableCommand(Commands.find(args[1]), args.length == 2 ? new String[0] : Arrays.copyOfRange(args, 2, args.length), nullLogger, env).execute();
         }
 
         logger.info("Finished loop.");

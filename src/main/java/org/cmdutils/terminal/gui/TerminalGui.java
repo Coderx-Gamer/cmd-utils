@@ -111,7 +111,6 @@ public class TerminalGui {
                         return;
                     }
 
-                    TerminalGui.this.promptField.setEditable(false);
                     for (RunnableCommand c : TerminalGui.this.queuedCommands) {
                         if (c == null) {
                             TerminalGui.this.logger.error("Invalid Command.");
@@ -125,7 +124,6 @@ public class TerminalGui {
                             });
                         }
                     }
-                    TerminalGui.this.promptField.setEditable(true);
 
                     TerminalGui.this.queuedCommands.clear();
                 }

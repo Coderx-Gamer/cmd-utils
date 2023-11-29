@@ -86,7 +86,6 @@ public class InGameTerminalGui extends Screen {
                         return false;
                     }
 
-                    this.setEditable(false);
                     for (RunnableCommand c : InGameTerminalGui.this.queuedCommands) {
                         if (c == null) {
                             InGameTerminalGui.this.logger.error("Invalid Command.");
@@ -98,7 +97,6 @@ public class InGameTerminalGui extends Screen {
                             }
                         }
                     }
-                    this.setEditable(true);
 
                     InGameTerminalGui.this.queuedCommands.clear();
 
