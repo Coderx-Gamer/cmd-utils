@@ -1,5 +1,6 @@
 package org.cmdutils.command.commands;
 
+import com.google.gson.JsonSerializationContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
@@ -40,7 +41,7 @@ public class MenuInfoCommand extends Command {
             logger.warn("Screen is null.\n");
         } else {
             logger.info("Screen\n");
-            logger.info("Title JSON: " + Text.Serializer.toJson(screen.getTitle()));
+            logger.info("Title JSON: " + Text.Serialization.toJsonString(screen.getTitle()));
             logger.info("Width: " + screen.width);
             logger.info("Height: " + screen.height + '\n');
         }

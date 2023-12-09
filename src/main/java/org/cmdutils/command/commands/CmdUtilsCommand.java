@@ -20,7 +20,6 @@ public class CmdUtilsCommand extends Command {
 
         logger.println("CMD-Utils " + ModInfo.VERSION + '\n');
         logger.println("License: " + ModInfo.LICENSE);
-        logger.println("Website: " + ModInfo.WEBSITE);
         logger.println("Source: " + ModInfo.SOURCE);
         logger.println("Authors:");
 

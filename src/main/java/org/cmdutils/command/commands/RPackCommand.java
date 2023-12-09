@@ -6,6 +6,8 @@ import org.cmdutils.command.CommandEnvironment;
 import org.cmdutils.command.Commands;
 import org.cmdutils.terminal.logger.Logger;
 
+import java.util.UUID;
+
 public class RPackCommand extends Command {
     public RPackCommand() {
         super("rpack", "Resource pack bypass tool.");
@@ -36,7 +38,7 @@ public class RPackCommand extends Command {
             return Commands.COMMAND_FAILURE;
         }
 
-        client.getNetworkHandler().sendPacket(new ResourcePackStatusC2SPacket(status));
+        client.getNetworkHandler().sendPacket(new ResourcePackStatusC2SPacket(client.getSession().getUuidOrNull(), status));
 
         logger.info("Sent resource pack status.");
 

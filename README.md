@@ -16,6 +16,9 @@ kill UI-Utils.
 
 ## Contact
 
+Discord Server:\
+https://discord.gg/NaKb65CEZn
+
 Coderx Gamer (owner):\
 Discord: public_static_void_main_args\
 Email: [coderx@mailfence.com](mailto:coderx@mailfence.com)
