@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public class RPackCommand extends Command {
     public RPackCommand() {
-        super("rpack", "Resource pack bypass tool.");
+        super("rpack", "Resource pack bypass tool.", "Syntax: \"rpack args0[accepted/loaded/declined/failed]\" ",null);
     }
 
     @Override

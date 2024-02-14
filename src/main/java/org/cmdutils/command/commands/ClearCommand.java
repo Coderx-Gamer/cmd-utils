@@ -7,7 +7,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class ClearCommand extends Command {
     public ClearCommand() {
-        super("clear", "Clear the log.");
+        super("clear", "Clear the log.", "No arguments", null);
     }
 
     @Override

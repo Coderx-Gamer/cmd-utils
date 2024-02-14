@@ -12,7 +12,8 @@ import java.util.UUID;
 
 public class SessionCommand extends Command {
     public SessionCommand() {
-        super("session", "Session ID getter/setter.");
+        // todo (mrbreak): rewrite this, its garbage
+        super("session", "Session ID getter/setter.", "Okay I don't want to rant here, this is powerfull, but annoying to use, you will need to use this like 4 times to actually do anything. \n Syntax: \"session args0[get/set] IF SET args1[\"username\"/\"uuid\"/\"token\"/\"type\"] args2[value of previous switch argument, ex msa, \"MrBreakNFix\", etc]",null);
     }
 
     @Override

@@ -7,9 +7,11 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class HelpCommand extends Command {
     public HelpCommand() {
-        super("help", "Shows a list of commands.");
+        super("help", "Shows a list of commands.", "Syntax: \"help args0[command] -- OPTIONAL", null);
     }
 
+
+    //todo (mrbreak): help argument correction
     @Override
     public int execute(String[] args, Logger logger, CommandEnvironment env) {
         if (args.length != 0 && args.length != 1) {
@@ -31,6 +33,7 @@ public class HelpCommand extends Command {
             }
 
             logger.info("Description: " + command.getDescription());
+            logger.info("Help: " + command.getHelp());
         }
 
         return Commands.COMMAND_SUCCESS;

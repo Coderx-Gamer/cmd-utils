@@ -10,7 +10,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class DropCommand extends Command {
     public DropCommand() {
-        super("drop", "Drop an item in your hotbar.");
+        super("drop", "Drop an item in your hotbar.", "Syntax: \"drop args0[\"all\"] -- OPTIONAL",null);
     }
 
     @Override

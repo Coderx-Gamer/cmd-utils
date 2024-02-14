@@ -7,7 +7,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class CloseCommand extends Command {
     public CloseCommand() {
-        super("close", "Close current GUI without sending a GUI close packet.");
+        super("close", "Close current GUI without sending a GUI close packet.", "Use this to keep stuff open server-side",null);
     }
 
     @Override

@@ -14,7 +14,7 @@ import org.cmdutils.util.Utils;
 
 public class ClickCommand extends Command {
     public ClickCommand() {
-        super("click", "Send a ClickSlot packet.");
+        super("click", "Send a ClickSlot packet.", "Syntax: \"click args0[SyncID(int) OR \"current\"] args1[Revision(int) OR \"current\"] args2[Slot (int)] args3[Button (int)] args4[SlotActionType (pickup, quick-move, swap, clone, throw, quick-craft, pickup-all)]\"\n Example: \"click current current 1 2 swap\" (untested example)",null);
     }
 
     @Override

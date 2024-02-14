@@ -11,7 +11,7 @@ import org.cmdutils.util.McfwFilterType;
 
 public class McfwCommand extends Command {
     public McfwCommand() {
-        super("mcfw", "Minecraft Firewall packet filter.");
+        super("mcfw", "Minecraft Firewall packet filter.", "Syntax: \"mcfw args0[quiet-disable, drops packets / status (returns if on or off) / list (lists packets filtered) / delayed (lists amount of delayed packets) / clear (clears packets) / clear-delayed (guess) / block/delay/remove] args1[if args0 was block delay or remove, then this is the type of packet (packet?)]\"",null);
     }
 
     @Override

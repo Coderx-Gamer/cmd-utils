@@ -5,9 +5,9 @@ import org.cmdutils.command.CommandEnvironment;
 import org.cmdutils.command.Commands;
 import org.cmdutils.terminal.logger.Logger;
 
-public class ChatCommand extends Command {
-    public ChatCommand() {
-        super("chat", "Send chat message, use \"/\" <command> to execute commands instead.", "Syntax: \"chat args0[\"Text in spaces w/ double quotes\"]\"\nor, \"chat args0[noSpacesNoQuotes]\"", null);
+public class SlashCommand extends Command {
+    public SlashCommand() {
+        super("/", "Sends a command to the server: \"/ kill\" (with space)", "Syntax \"/ args0[command]\n Example: \"/ kill\" or \" / \"kill @e[type=item]\" \"",null);
     }
 
     @Override
@@ -18,8 +18,8 @@ public class ChatCommand extends Command {
         }
 
         if (args.length == 1) {
-            client.getNetworkHandler().sendChatMessage(args[0]);
-            logger.info("Sent chat message.");
+            client.getNetworkHandler().sendCommand(args[0]);
+            logger.info("Sent command.");
             return Commands.COMMAND_SUCCESS;
         }
 

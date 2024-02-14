@@ -8,7 +8,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class CmdUtilsCommand extends Command {
     public CmdUtilsCommand() {
-        super("cmdutils", "Shows CMD Utils information.");
+        super("cmdutils", "Shows CMD Utils information.", "Reach out to authors for issues or help",null);
     }
 
     @Override

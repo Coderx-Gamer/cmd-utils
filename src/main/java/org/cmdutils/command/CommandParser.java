@@ -17,7 +17,7 @@ public class CommandParser {
         }
 
         String commandName = tokens.get(0);
-        Command command = Commands.find(commandName);
+        Command command = findCommand(commandName);
         if (command == null) {
             return null;
         }
@@ -37,5 +37,18 @@ public class CommandParser {
             tokens.add(token);
         }
         return tokens;
+    }
+
+    private static Command findCommand(String name) {
+        Command command = Commands.find(name);
+        if (command == null) {
+            for (Command cmd : Commands.COMMANDS) {
+                if (cmd.getAlias() != null && cmd.getAlias().equals(name)) {
+                    command = cmd;
+                    break;
+                }
+            }
+        }
+        return command;
     }
 }

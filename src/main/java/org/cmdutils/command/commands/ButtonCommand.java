@@ -11,7 +11,7 @@ import org.cmdutils.util.Utils;
 
 public class ButtonCommand extends Command {
     public ButtonCommand() {
-        super("button", "Send a ButtonClick packet.");
+        super("button", "Send a ButtonClick packet.", "Syntax: \"button\" args0[SyncID / current] args1[button (int)]", null);
     }
 
     @Override

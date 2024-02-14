@@ -9,7 +9,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class DeSyncCommand extends Command {
     public DeSyncCommand() {
-        super("desync", "Send a GUI close packet without closing your client-side GUI.");
+        super("desync", "Send a GUI close packet without closing your client-side GUI.", "Be connected to a server with a HandledScreen, like a chest, open",null);
     }
 
     @Override

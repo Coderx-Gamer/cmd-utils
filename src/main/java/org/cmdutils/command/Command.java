@@ -8,10 +8,19 @@ public abstract class Command {
 
     private final String name;
     private final String description;
+    private final String alias;
+    private final String help;
 
-    public Command(String name, String description) {
+    public Command(String name, String description, String help) {
+        this(name, description, null, help);
+    }
+
+    public Command(String name, String description, String help, String alias) {
         this.name = name;
         this.description = description;
+        this.help = help;
+        this.alias = alias;
+
     }
 
     public abstract int execute(String[] args, Logger logger, CommandEnvironment env);
@@ -22,5 +31,13 @@ public abstract class Command {
 
     public String getDescription() {
         return this.description;
+    }
+
+    public String getAlias() {
+        return this.alias;
+    }
+
+    public String getHelp() {
+        return this.help;
     }
 }

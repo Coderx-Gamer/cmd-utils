@@ -9,7 +9,7 @@ import org.cmdutils.util.Utils;
 
 public class TradeCommand extends Command {
     public TradeCommand() {
-        super("trade", "Select villager trade by ID.");
+        super("trade", "Select villager trade by ID, via SelectMerchantTrade packet.", "Syntax: \"trade args0[tradeId (int)]\"\n ",null);
     }
 
     @Override

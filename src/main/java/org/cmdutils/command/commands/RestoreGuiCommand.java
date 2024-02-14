@@ -7,7 +7,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class RestoreGuiCommand extends Command {
     public RestoreGuiCommand() {
-        super("restoregui", "Restore your saved GUI.");
+        super("restoregui", "Restore your saved GUI.", "No arguments, theres also a keybind for this, make sure you saved a gui first!",null);
     }
 
     @Override

@@ -45,5 +45,14 @@ public class Commands {
         registerCommand(new TradeCommand());
         registerCommand(new LoopCommand());
         registerCommand(new DropCommand());
+        registerCommand(new CrashCommand());
+        registerCommand(new BashCommand());
+        registerCommand(new SlashCommand());
+//        registerCommand(new RespawnCommand());
+//        registerCommand(new JoinServerCommand());
+//        registerCommand(new QuitGameCommand()); // pov too lazy to press "Quit Game"
+
+
+
     }
 }

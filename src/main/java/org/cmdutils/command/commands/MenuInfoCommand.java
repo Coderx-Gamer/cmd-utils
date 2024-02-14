@@ -12,7 +12,8 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class MenuInfoCommand extends Command {
     public MenuInfoCommand() {
-        super("menuinfo", "Shows details of your current screen.");
+        // todo: get MenuInfo to actually do something
+        super("menuinfo", "Shows details of your current screen.", "honestly i never got this to work, gl mate!",null);
     }
 
     @Override

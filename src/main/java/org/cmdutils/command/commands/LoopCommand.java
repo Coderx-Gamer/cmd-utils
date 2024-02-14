@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class LoopCommand extends Command {
     public LoopCommand() {
-        super("loop", "Loop a command any amount of times.");
+        super("loop", "Loop a command any amount of times.", "Syntax: \"loop args0[commandName] argumentsOfCommandIfNeeded[]... -- OPTIONAL\"",null);
     }
 
     @Override

@@ -13,7 +13,7 @@ public class SaveGuiCommand extends Command {
     public static ScreenHandler savedScreenHandler = null;
 
     public SaveGuiCommand() {
-        super("savegui", "Saves your GUI so it can be restored.");
+        super("savegui", "Saves your GUI so it can be restored.", "Use the restore gui command or keybind with this.",null);
     }
 
     @Override

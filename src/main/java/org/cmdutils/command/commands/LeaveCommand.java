@@ -9,7 +9,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class LeaveCommand extends Command {
     public LeaveCommand() {
-        super("leave", "Leave the server.");
+        super("leave", "Leave the server.", "Just be on a server / in a world before doing this.",null);
     }
 
     @Override

@@ -7,7 +7,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class WakeCommand extends Command {
     public WakeCommand() {
-        super("wake", "Wake up from a bed client-side.");
+        super("wake", "Wake up from a bed client-side.", "Im waking up, I feel it in my bones, enough to make my system blow... But seriously, no arguments",null);
     }
 
     @Override

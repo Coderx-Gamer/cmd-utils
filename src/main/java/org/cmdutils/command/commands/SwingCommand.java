@@ -9,7 +9,7 @@ import org.cmdutils.terminal.logger.Logger;
 
 public class SwingCommand extends Command {
     public SwingCommand() {
-        super("swing", "Open the CMD-Utils (Swing) terminal.");
+        super("swing", "Open the CMD-Utils (Swing) terminal.", "Telnet is better, open up a (real) terminal and run \"telnet localhost 3300\"",null);
     }
 
     @Override
